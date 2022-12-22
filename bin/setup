@@ -115,6 +115,8 @@ setup.git-hook() {
 }
 
 setup.os-specific() {
+  echo "asdfasdf"
+  echo "My uname is `uname -a`"
   local os="$(uname -s | tr '[:upper:]' '[:lower:]')"
   local setup_script
   setup_script="./bin/setup-${os}"
